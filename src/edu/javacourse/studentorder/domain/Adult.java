@@ -8,6 +8,10 @@ public class Adult extends Person{
     private LocalDate issueDate;
     private String issueDepartment;
 
+    public Adult(){
+        System.out.println("Adult is created");
+    }
+
     public String getPersonString(){
         return surName + " " + givenName +":"+passportNumber;
     }
