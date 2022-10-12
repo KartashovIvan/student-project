@@ -8,6 +8,10 @@ public class Adult extends Person{
     private LocalDate issueDate;
     private String issueDepartment;
 
+    public String getPersonString(){
+        return surName + " " + givenName +":"+passportNumber;
+    }
+
     public String getPassportSeria() {
         return passportSeria;
     }
