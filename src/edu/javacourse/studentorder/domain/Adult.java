@@ -2,19 +2,22 @@ package edu.javacourse.studentorder.domain;
 
 import java.time.LocalDate;
 
-public class Adult extends Person{
+public class Adult extends Person
+{
     private String passportSeria;
     private String passportNumber;
     private LocalDate issueDate;
     private String issueDepartment;
+    private String university;
+    private String studentId;
 
     public Adult(){
-        System.out.println("Adult is created");
     }
 
-    public String getPersonString(){
-        return surName + " " + givenName +":"+passportNumber;
+    public Adult(String surName, String givenName, String patronymic, LocalDate dateOfBirth) {
+        super(surName, givenName, patronymic, dateOfBirth);
     }
+
 
     public String getPassportSeria() {
         return passportSeria;
@@ -46,5 +49,21 @@ public class Adult extends Person{
 
     public void setIssueDepartment(String issueDepartment) {
         this.issueDepartment = issueDepartment;
+    }
+
+    public String getUniversity() {
+        return university;
+    }
+
+    public void setUniversity(String university) {
+        this.university = university;
+    }
+
+    public String getStudentId() {
+        return studentId;
+    }
+
+    public void setStudentId(String studentId) {
+        this.studentId = studentId;
     }
 }
