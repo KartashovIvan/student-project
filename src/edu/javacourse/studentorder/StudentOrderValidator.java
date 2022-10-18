@@ -70,7 +70,6 @@ public class StudentOrderValidator {
     }
 
     public AnswerChildren checkChildren(StudentOrder so){
-
         return childrenVal.checkChildren(so);
     }
 
