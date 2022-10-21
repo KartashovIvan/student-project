@@ -6,8 +6,17 @@ public class Address {
     private String building;
     private String extension;
     private String apartment;
-    private String university;
-    private String studentId;
+
+    public Address() {
+    }
+
+    public Address(String postCode, String street, String building, String extension, String apartment) {
+        this.postCode = postCode;
+        this.street = street;
+        this.building = building;
+        this.extension = extension;
+        this.apartment = apartment;
+    }
 
     public String getPostCode() {
         return postCode;
@@ -47,21 +56,5 @@ public class Address {
 
     public void setApartment(String apartment) {
         this.apartment = apartment;
-    }
-
-    public String getUniversity() {
-        return university;
-    }
-
-    public void setUniversity(String university) {
-        this.university = university;
-    }
-
-    public String getStudentId() {
-        return studentId;
-    }
-
-    public void setStudentId(String studentId) {
-        this.studentId = studentId;
     }
 }
