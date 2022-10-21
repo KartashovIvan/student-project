@@ -38,13 +38,13 @@ public class StudentOrderValidator {
 //        }
 
         for(StudentOrder so : soArray){
-            System.out.println();
             checkOneOrder(so);
+            System.out.println();
         }
     }
 
     public StudentOrder[] readStudentOrders(){
-        StudentOrder[] soArray = new StudentOrder[5];
+        StudentOrder[] soArray = new StudentOrder[3];
 
         for(int i = 0;i < soArray.length;i++){
             soArray[i] = SaveStudentOrder.buildStudentOrder(i);
@@ -54,11 +54,11 @@ public class StudentOrderValidator {
 
     public void checkOneOrder(StudentOrder so){
         AnswerCityRegister cityAnswer = checkCityRegister(so);
-        AnswerWedding wedAnswer = checkWedding(so);
-        AnswerChildren childAnswer = checkChildren(so);
-        AnswerStudent studentAnswer = checkStudent(so);
-
-        sendMail(so);
+//        AnswerWedding wedAnswer = checkWedding(so);
+//        AnswerChildren childAnswer = checkChildren(so);
+//        AnswerStudent studentAnswer = checkStudent(so);
+//
+//        sendMail(so);
     }
 
     public AnswerCityRegister checkCityRegister(StudentOrder so){
